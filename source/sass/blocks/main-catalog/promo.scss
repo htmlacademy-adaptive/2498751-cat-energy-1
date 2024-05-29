@@ -1,0 +1,41 @@
+.promo__wrapper {
+  width: 280px;
+  height: 290px;
+  padding: 0 20px;
+  margin-bottom: 35px;
+  background-image: url("../../../img/background-promo.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  z-index: -2;
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 280px;
+    height: 290px;
+    top: 0;
+    background-image: url("../../../img/background-layer.png") no-repeat;
+    z-index: -1;
+  }
+}
+
+.promo__description {
+  @include font-lato (16px, 20px, $color-text-tertiary);
+  @include gap-reset;
+  padding-top: 59px;
+  text-align: center;
+}
+
+.promo__description::before {
+  content: "";
+  display: block;
+  width: 78px;
+  height: 80px;
+  margin: 0 auto;
+  margin-bottom: 48px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("../../../img/promo-icon.svg");
+}

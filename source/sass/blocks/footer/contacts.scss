@@ -1,0 +1,16 @@
+@import "../common-blocks/var";
+@import "../common-blocks/mix";
+
+.contacts {
+  padding: 26px 20px;
+  display: flex;
+}
+
+.contacts__invitation {
+  @include gap-reset;
+  @include font-oswald-regular (16px, 20px, $color-text-quaternary);
+}
+
+.contacts__address {
+  @include font-lato (14px, 20px, $color-text-secondary);
+}

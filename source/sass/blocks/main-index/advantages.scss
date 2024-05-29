@@ -1,0 +1,22 @@
+@import "../common-blocks/var";
+@import "../common-blocks/mix";
+
+.advantages__container {
+  margin-bottom: 49px;
+  padding: 0 20px;
+}
+
+.advantages__title {
+  @include font-oswald-regular (36px, 40px, $color-text-primary);
+  @include gap-reset;
+  margin-bottom: 40px;
+}
+
+.advantages__list {
+  @include list-reset;
+  @include font-lato (14px, 18px, $color-text-secondary);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  // margin: 0 20px;
+}

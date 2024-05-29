@@ -1,0 +1,47 @@
+@import "../common-blocks/var";
+
+@import "../common-blocks/mix";
+
+.hero__container {
+  background-image: url("../../../img/background-mobile.jpg");
+  background-repeat: no-repeat;
+  background-position: 0% 0%;
+  position: relative;
+  z-index: -2;
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 320px;
+    height: 302px;
+    left: 0;
+    top: 0;
+    background: url("../../../img/background-layer.png") no-repeat;
+    z-index: -1;
+  }
+}
+
+.hero__title {
+  @include font-oswald-regular (36px, 36px, $color-text-tertiary);
+  @include gap-reset;
+  text-align: center;
+}
+
+.hero__description {
+  @include font-oswald-regular (14px, 14px, $color-text-tertiary);
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.hero__link {
+  display: block;
+  text-align: center;
+  margin: 0 20px 20px;
+  text-decoration: none;
+  padding: 10px;
+}
+
+.hero__image {
+  display: block;
+  margin: 0 auto;
+}

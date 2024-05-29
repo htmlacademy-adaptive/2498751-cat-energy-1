@@ -1,0 +1,36 @@
+@import "../common-blocks/var";
+@import "../common-blocks/mix";
+
+.page-footer__logo {
+  display: flex;
+  justify-content: center;
+  min-width: 128px;
+  border-bottom: 1px solid $color-border;
+  padding-bottom: 20px;
+}
+
+.page-footer__links {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px 20px;
+  background-color: $color-background-secondary;
+}
+
+.page-footer__partner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.page-footer__partner-link {
+  text-decoration: none;
+}
+
+.page-footer__partner-name {
+  @include font-lato (16px, 20px, $color-text-secondary);
+}
+
+.page-footer__contacts--dark {
+  background-color: $color-background-secondary;
+}

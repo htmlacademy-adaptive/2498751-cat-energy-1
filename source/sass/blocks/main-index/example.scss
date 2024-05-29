@@ -1,0 +1,34 @@
+@import "../common-blocks/var";
+@import "../common-blocks/mix";
+
+.example__container {
+  background-color: $color-background-tertiary;
+  padding: 0 20px;
+}
+
+.example__title {
+  @include gap-reset;
+  @include font-oswald-regular (36px, 40px, $color-text-primary);
+  padding-top: 25px;
+  margin-bottom: 40px;
+}
+
+.example__description {
+  @include gap-reset;
+  @include font-lato (14px, 18px, $color-text-secondary);
+  margin-bottom: 20px;
+}
+
+.example__cost {
+  @include font-oswald-regular (14px, 20px, $color-text-primary);
+  text-transform: uppercase;
+  margin: 20px 0;
+}
+
+.example__result {
+  @include font-oswald-regular (24px, 24px, $color-text-primary);
+}
+
+.example__parameter {
+  @include font-lato (12px, 12px, $color-text-secondary);
+}

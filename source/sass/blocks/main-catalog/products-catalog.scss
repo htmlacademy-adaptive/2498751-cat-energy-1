@@ -1,0 +1,15 @@
+.products-catalog__title {
+  @include font-oswald-regular (36px, 36px, $color-text-primary);
+  margin-bottom: 41px;
+  text-align: center;
+}
+
+.products-catalog__list {
+  @include list-reset;
+}
+
+.products-catalog__item {
+  border-top: 1px solid $color-border-catalog;
+  padding: 20px 20px 25px;
+}
+

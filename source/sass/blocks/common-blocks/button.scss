@@ -1,0 +1,14 @@
+.button {
+  padding: 0;
+  margin: 0;
+  border: none;
+  cursor: pointer;
+  @include font-oswald-regular (16px, 20px, $color-text-tertiary);
+  text-transform: uppercase;
+  background-color: $color-brand;
+}
+
+.button--light {
+  color: $color-text-secondary;
+  background-color: $color-background-secondary;
+}

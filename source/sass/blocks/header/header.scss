@@ -1,0 +1,22 @@
+.header {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+.header__logo-image {
+  margin-right: 56px;
+}
+
+.header__logo-name {
+  margin-right: 65px;
+  width: 101px;
+}
+
+.header__container {
+  display: flex;
+  align-items: center;
+  padding: 13px 0;
+}

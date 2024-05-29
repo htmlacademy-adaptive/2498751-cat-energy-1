@@ -1,0 +1,42 @@
+@mixin font-lato ($font-size, $line-height, $font-color) {
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: $font-size;
+  line-height: $line-height;
+  color: $font-color;
+}
+
+@mixin font-oswald-regular ($font-size, $line-height, $font-color) {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: $font-size;
+  line-height: $line-height;
+  color: $font-color;
+}
+
+@mixin font-oswald-medium ($font-size, $line-height, $font-color) {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: $font-size;
+  line-height: $line-height;
+  color: $font-color;
+}
+
+@mixin list-reset {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+@mixin gap-reset {
+  margin: 0;
+}
+
+@mixin fieldset-reset {
+  border: none;
+  margin: 0;
+  padding: 0;
+}

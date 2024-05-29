@@ -1,0 +1,20 @@
+.extra-catalog__wrapper {
+  padding: 0 20px;
+  margin-bottom: 35px;
+}
+
+.extra-catalog__title {
+  @include gap-reset;
+  @include font-oswald-regular (24px, 24px, $color-text-primary);
+  padding-bottom: 36px;
+  border-bottom: 1px solid $color-border-catalog;
+}
+
+.extra-catalog__list {
+  @include list-reset;
+}
+
+.extra-catalog__item {
+  padding: 13px 0 19px;
+  border-bottom: 1px solid $color-border-catalog;
+}
