@@ -1,13 +1,13 @@
 .extra-catalog__wrapper {
   padding: 0 20px;
-  margin-bottom: 35px;
 }
 
 .extra-catalog__title {
   @include gap-reset;
-  @include font-oswald-regular (24px, 24px, $color-text-primary);
+  font: var(--font-oswald-header);
   padding-bottom: 36px;
   border-bottom: 1px solid $color-border-catalog;
+  color: $color-text-primary;
 }
 
 .extra-catalog__list {

@@ -1,9 +1,7 @@
-@import "../common-blocks/var";
-
+@import "../common-blocks/vars";
 @import "../common-blocks/mix";
 
 .diet-plans__container {
-  margin-bottom: 20px;
   padding: 0 20px;
 }
 
@@ -20,28 +18,30 @@
 }
 
 .diet-plans__title {
-  @include font-oswald-regular (24px, 37px, $color-text-primary);
   @include gap-reset;
+  font: var(--font-oswald-header-medium);
   text-transform: uppercase;
-  margin-bottom: 29px;
   text-align: center;
+  margin-bottom: 29px;
+  color: $color-text-primary;
 }
 
 .diet-plans__description {
-  @include font-lato (14px, 18px, $color-text-secondary);
   @include gap-reset;
+  font: var(--font-lato-base);
   padding-bottom: 23px;
   margin-bottom: 15px;
   border-bottom: 1px solid $color-border;
+  color: $color-text-secondary;
 }
 
 .diet-plans__link {
+  font: var(--font-oswald-base);
   display: block;
-  text-decoration: none;
-  @include font-oswald-regular (16px, 16px, $color-text-primary);
   text-transform: uppercase;
   margin-bottom: 18px;
   position: relative;
+  color: $color-text-primary;
 }
 
 .diet-plans__link::after {

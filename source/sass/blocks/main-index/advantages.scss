@@ -1,22 +1,22 @@
-@import "../common-blocks/var";
+@import "../common-blocks/vars";
 @import "../common-blocks/mix";
 
 .advantages__container {
-  margin-bottom: 49px;
   padding: 0 20px;
 }
 
 .advantages__title {
-  @include font-oswald-regular (36px, 40px, $color-text-primary);
   @include gap-reset;
+  font: var(--font-oswald-header-xlarge);
   margin-bottom: 40px;
+  color: $color-text-primary;
 }
 
 .advantages__list {
   @include list-reset;
-  @include font-lato (14px, 18px, $color-text-secondary);
+  font: var(--font-lato-base);
   display: flex;
   flex-direction: column;
   gap: 20px;
-  // margin: 0 20px;
+  color: $color-text-secondary;
 }

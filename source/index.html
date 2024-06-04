@@ -17,19 +17,19 @@
       <a>
         <img class="header__logo-name" src="img/logo-name.svg" width="128" height="24" alt="Cat Energy">
       </a>
-      <nav class="navigation">
+      <nav class="navigation visually-hidden">
         <button class="navigation__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
         <ul class="navigation__list">
-        <li class="navigation__item">
-          <a class="navigation__link main-navigation__link--current" href="#">Главная</a>
-        </li>
-        <li class="navigation__item">
-          <a class="navigation__link" href="catalog.html">Каталог продукции</a>
-        </li>
-        <li class="navigation__item">
-          <a class="navigation__link" href="form.html">Подбор программы</a>
-        </li>
-      </ul>
+          <li class="navigation__item">
+            <a class="navigation__link main-navigation__link--current" href="#">Главная</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="catalog.html">Каталог продукции</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="form.html">Подбор программы</a>
+          </li>
+        </ul>
       </nav>
     </div>
   </header>
@@ -47,7 +47,7 @@
       <a class="hero__link button" href="form.html">Подобрать программу</a>
     </section>
 
-    <section class="diet-plans">
+    <section class="main-container__diet-plans diet-plans">
       <div class="diet-plans__container container">
         <h2 class="visually-hidden">Подбор программы питания</h2>
 
@@ -69,7 +69,7 @@
       </div>
     </section>
 
-    <section class="advantages">
+    <section class="main-container__advantages advantages">
       <div class="advantages__container container">
         <h2 class="advantages__title">Как это работает</h2>
 
@@ -90,7 +90,7 @@
       </div>
     </section>
 
-    <section class="example">
+    <section class="main-container__example example">
       <div class="example__container container">
         <h2 class="example__title">Живой пример</h2>
 
@@ -132,11 +132,9 @@
     <div class="page-footer__container container">
       <div class="page-footer__contacts contacts">
         <p class="contacts__invitation">Приглашаем к сотрудничеству дилеров!</p>
-        <div class="contacts-wrapper">
           <address class="contacts__address">
             ул. Большая Конюшенная, д. 19/8<br>Санкт-Петербург
           </address>
-        </div>
       </div>
       <div class="contacts__map">
         <script type="text/javascript" charset="utf-8" async
@@ -167,7 +165,7 @@
         </div>
         <div class="page-footer__partner">
           <a class="page-footer__partner-link" href="https://htmlacademy.ru">
-            <p class="page-footer__partner-name">HTML Academy</p>
+            HTML Academy
           </a>
           <a class="page-footer__partner-link" href="https://htmlacademy.ru">
             <svg class="page-footer__partner-logo" aria-hidden="true" focusable="false" width="27" height="34"

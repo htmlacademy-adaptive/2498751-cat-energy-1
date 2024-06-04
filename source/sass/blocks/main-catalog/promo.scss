@@ -2,7 +2,6 @@
   width: 280px;
   height: 290px;
   padding: 0 20px;
-  margin-bottom: 35px;
   background-image: url("../../../img/background-promo.jpg");
   background-repeat: no-repeat;
   background-position: center;
@@ -15,16 +14,18 @@
     width: 280px;
     height: 290px;
     top: 0;
-    background-image: url("../../../img/background-layer.png") no-repeat;
+    background-image: url("../../../img/background-layer.png");
+    background-repeat: no-repeat;
     z-index: -1;
   }
 }
 
 .promo__description {
-  @include font-lato (16px, 20px, $color-text-tertiary);
   @include gap-reset;
+  font: var(--font-lato-xlarge);
   padding-top: 59px;
   text-align: center;
+  color: $color-text-tertiary;
 }
 
 .promo__description::before {

@@ -1,16 +1,16 @@
-@import "../common-blocks/var";
+@import "../common-blocks/vars";
 @import "../common-blocks/mix";
 
 .extra-card__link {
-  text-decoration: none;
   color: $color-text-fivefold;
 }
 
 .extra-card__title {
-  @include font-oswald-regular (16px, 16px, $color-text-fivefold);
   @include gap-reset;
+  font: var(--font-oswald-base);
   text-transform: uppercase;
   margin-bottom: 13px;
+  color: $color-text-fivefold;
 }
 
 .extra-card__info {
@@ -20,14 +20,15 @@
 }
 
 .extra-card__pack {
-  @include font-lato (14px, 14px, $color-text-secondary);
+  font: var(--font-lato-base-small);
+  color: $color-text-secondary;
 }
 
 .extra-card__price {
-  @include font-lato (14px, 14px, $color-text-secondary);
+  font: var(--font-lato-base-small);
+  color: $color-text-secondary;
 }
 
 .extra-card__button {
-  min-width: 280px;
   padding: 10px;
 }

@@ -1,17 +1,18 @@
 .worksheet__title {
   @include gap-reset;
-  @include font-oswald-regular (36px, 36px, $color-text-primary);
+  font: var(--font-oswald-header-large);
   margin-bottom: 37px;
-  padding: 27px 20px 0;
-  border-top: 1px solid $color-border;
+  padding: 0 20px;
+  color: $color-text-primary;
 }
 
 .worksheet__fill {
   @include gap-reset;
-  @include font-oswald-regular (14px, 18px, $color-text-primary);
+  font: var(--font-oswald-small-average);
   text-transform: uppercase;
   padding: 0 20px;
   margin-bottom: 39px;
+  color: $color-text-primary;
 }
 
 .worksheet__group:nth-child(-n+2) {
@@ -22,17 +23,16 @@
 .worksheet__group {
   @include fieldset-reset;
   padding: 0 20px;
-
-  margin-bottom: 22px;
 }
 
 .worksheet__list {
   @include list-reset;
-  @include font-oswald-regular (16px, 18px, $color-text-secondary);
+  font: var(--font-oswald-large);
   text-transform: uppercase;
   display: flex;
   flex-direction: column;
   gap: 14px;
+  color: $color-text-secondary;
 }
 
 .worksheet__item {
@@ -44,26 +44,29 @@
 
 .worksheet__input {
   @include list-reset;
-  @include font-oswald-regular (16px, 18px, $color-text-secondary);
+  font: var(--font-oswald-large);
   text-transform: uppercase;
+  width: 100%;
   padding: 14px 15px 13px;
   border: 1px solid $color-input-quiet;
-  width: 100%;
+  color: $color-text-secondary;
 }
 
 .worksheet__legend {
-  @include font-oswald-regular (24px, 26px, $color-text-primary);
+  font: var(--font-oswald-header-small);
   margin-bottom: 35px;
+  color: $color-text-primary;
 }
 
 .worksheet__textarea {
-  @include font-oswald-regular (16px, 18px, $color-text-primary);
+  font: var(--font-oswald-large);
   text-transform: uppercase;
-  border: 1px solid $color-input-quiet;
   width: 100%;
   box-sizing: border-box;
   min-height: 150px;
   padding: 14px 14px 14px 15px;
+  border: 1px solid $color-input-quiet;
+  color: $color-text-primary;
 }
 
 .worksheet__label {
@@ -78,18 +81,37 @@
 
 .worksheet__action {
   padding: 0 20px;
-  margin-top: 12px;
   margin-bottom: 32px;
 }
 
 .worksheet__button {
-  min-width: 280px;
   padding: 10px;
   margin-bottom: 21px;
 }
 
 .worksheet__note {
   @include gap-reset;
-  @include font-lato (14px, 16px, $color-text-primary);
+  font: var(--font-lato-base-average);
+  color: $color-text-primary;
   text-align: center;
+}
+
+.worksheet__group--info {
+  margin-bottom: 22px;
+}
+
+.worksheet__group--purpose {
+  margin-bottom: 26px;
+}
+
+.worksheet__group--contacts {
+  margin-bottom: 24px;
+}
+
+.worksheet__group--comment {
+  margin-bottom: 23px;
+}
+
+.worksheet__group--extra {
+  margin-bottom: 34px;
 }

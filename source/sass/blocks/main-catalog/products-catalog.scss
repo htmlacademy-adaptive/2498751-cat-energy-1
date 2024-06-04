@@ -1,7 +1,9 @@
 .products-catalog__title {
-  @include font-oswald-regular (36px, 36px, $color-text-primary);
+  @include gap-reset;
+  font: var(--font-oswald-header-large);
   margin-bottom: 41px;
   text-align: center;
+  color: $color-text-primary;
 }
 
 .products-catalog__list {

@@ -1,0 +1,38 @@
+:root {
+  --font-oswald-header-xlarge: 400 36px/40px "Oswald", sans-serif;
+  --font-oswald-header-large:  400 36px/36px "Oswald", sans-serif;
+  --font-oswald-header-medium: 400 24px/37px "Oswald", sans-serif;
+  --font-oswald-header-small:  400 24px/26px "Oswald", sans-serif;
+  --font-oswald-header:        400 24px/24px "Oswald", sans-serif;
+  --font-oswald-xlarge:        400 16px/20px "Oswald", sans-serif;
+  --font-oswald-large:         400 16px/18px "Oswald", sans-serif;
+  --font-oswald-base:          400 16px/16px "Oswald", sans-serif;
+  --font-oswald-small-high:    400 14px/20px "Oswald", sans-serif;
+  --font-oswald-small-average: 400 14px/18px "Oswald", sans-serif;
+  --font-oswald-small-low:     400 14px/14px "Oswald", sans-serif;
+
+  --font-lato-xlarge:          400 16px/20px "Lato", sans-serif;
+  --font-lato-large:           400 14px/20px "Lato", sans-serif;
+  --font-lato-base:            400 14px/18px "Lato", sans-serif;
+  --font-lato-base-average:    400 14px/16px "Lato", sans-serif;
+  --font-lato-base-small:      400 14px/14px "Lato", sans-serif;
+  --font-lato-small-high:      400 12px/16px "Lato", sans-serif;
+  --font-lato-small-low:       400 12px/12px "Lato", sans-serif;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+a {
+  text-decoration: none;
+}

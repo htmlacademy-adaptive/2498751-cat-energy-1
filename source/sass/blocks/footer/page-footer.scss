@@ -1,4 +1,4 @@
-@import "../common-blocks/var";
+@import "../common-blocks/vars";
 @import "../common-blocks/mix";
 
 .page-footer__logo {
@@ -24,13 +24,11 @@
 }
 
 .page-footer__partner-link {
-  text-decoration: none;
-}
-
-.page-footer__partner-name {
-  @include font-lato (16px, 20px, $color-text-secondary);
+  font: var(--font-lato-xlarge);
+  color: $color-text-secondary;
 }
 
 .page-footer__contacts--dark {
   background-color: $color-background-secondary;
 }
+

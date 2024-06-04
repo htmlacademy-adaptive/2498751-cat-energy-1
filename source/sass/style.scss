@@ -1,10 +1,12 @@
+@import "./blocks/common-blocks/mix.scss";
+@import "./blocks/common-blocks/vars.scss";
+@import "./blocks/common-blocks/base.scss";
 @import "./blocks/common-blocks/font.scss";
 @import "./blocks/common-blocks/page.scss";
 @import "./blocks/common-blocks/button.scss";
-@import "./blocks/common-blocks/mix.scss";
-@import "./blocks/common-blocks/var.scss";
 @import "./blocks/common-blocks/visually-hidden.scss";
 @import "./blocks/common-blocks/container.scss";
+@import "./blocks/common-blocks/main-container.scss";
 @import "./blocks/header/header.scss";
 @import "./blocks/header/navigation.scss";
 @import "./blocks/main-index/hero.scss";
@@ -14,6 +16,7 @@
 @import "./blocks/footer/page-footer.scss";
 @import "./blocks/footer/social.scss";
 @import "./blocks/footer/contacts.scss";
+@import "./blocks/main-catalog/catalog-container.scss";
 @import "./blocks/main-catalog/products-catalog.scss";
 @import "./blocks/main-catalog/product-card.scss";
 @import "./blocks/main-catalog/show-more.scss";
