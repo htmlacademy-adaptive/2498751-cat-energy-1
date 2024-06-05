@@ -10,7 +10,7 @@
 </head>
 
 <body class="page__body container">
-  <header class="header">
+  <header class="page__header page__header--form header">
     <div class="header__container container">
       <a class="header__logo" aria-current="page">
         <img class="header__logo-image" src="img/logo-mobile.svg" width="33" height="38" alt="Логотип Cat Energy">
@@ -18,19 +18,19 @@
       <a>
         <img class="header__logo-name" src="img/logo-name.svg" width="128" height="24" alt="Cat Energy">
       </a>
-      <nav class="navigation">
+      <nav class="navigation visually-hidden">
         <button class="navigation__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
         <ul class="navigation__list">
-        <li class="navigation__item">
-          <a class="navigation__link main-navigation__link--current" href="#">Главная</a>
-        </li>
-        <li class="navigation__item">
-          <a class="navigation__link" href="catalog.html">Каталог продукции</a>
-        </li>
-        <li class="navigation__item">
-          <a class="navigation__link" href="form.html">Подбор программы</a>
-        </li>
-      </ul>
+          <li class="navigation__item">
+            <a class="navigation__link main-navigation__link--current" href="#">Главная</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="catalog.html">Каталог продукции</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="form.html">Подбор программы</a>
+          </li>
+        </ul>
       </nav>
     </div>
   </header>
@@ -41,7 +41,7 @@
 
       <p class="worksheet__fill">Заполните анкету, и мы подберем<br> программу питания для вашего кота</p>
       <form class="worksheet__form" action="https://echo.htmlacademy.ru" method="post">
-        <fieldset class="worksheet__group">
+        <fieldset class="worksheet__group worksheet__group--info">
           <legend class="visually-hidden">Информация о питомце</legend>
           <ul class="worksheet__list">
             <li class="worksheet__item">
@@ -59,7 +59,7 @@
           </ul>
         </fieldset>
 
-        <fieldset class="worksheet__group">
+        <fieldset class="worksheet__group worksheet__group--purpose">
           <legend class="visually-hidden">Цель</legend>
           <ul class="worksheet__list">
             <li class="worksheet__item">
@@ -86,7 +86,7 @@
           </ul>
         </fieldset>
 
-        <fieldset class="worksheet__group">
+        <fieldset class="worksheet__group worksheet__group--contacts">
           <legend class="worksheet__legend">Контактные данные<br> (владельца кота)</legend>
           <ul class="worksheet__list">
             <li class="worksheet__item">
@@ -100,32 +100,32 @@
           </ul>
         </fieldset>
 
-        <fieldset class="worksheet__group">
+        <fieldset class="worksheet__group worksheet__group--comment">
           <legend class="worksheet__legend">Комментарий</legend>
           <textarea class="worksheet__textarea" name="text-comment"
             placeholder="Расскажите обо всех повадках кота"></textarea>
         </fieldset>
 
-        <fieldset class="worksheet__group">
+        <fieldset class="worksheet__group worksheet__group--extra">
           <legend class="worksheet__legend">Дополнительно</legend>
           <ul class="worksheet__list">
             <li class="worksheet__item">
               <label class="worksheet__control">
-                <input class="worksheet__input" type="checkbox" name="sweetener" checked>
+                <input class="worksheet__input" type="checkbox" name="extra-goods" value="Сахарозаменитель" checked>
                 <span class="worksheet__mark worksheet__mark--checkbox"></span>
                 <span class="worksheet__label">Cахарозаменитель</span>
               </label>
             </li>
             <li class="worksheet__item">
               <label class="worksheet__control">
-                <input class="worksheet__input" type="checkbox" name="water">
+                <input class="worksheet__input" type="checkbox" name="extra-goods" value="Питьевая вода">
                 <span class="worksheet__mark worksheet__mark--checkbox"></span>
                 <span class="worksheet__label">Питьевая вода</span>
               </label>
             </li>
             <li class="worksheet__item">
               <label class="worksheet__control">
-                <input class="worksheet__input" type="checkbox" name="milk">
+                <input class="worksheet__input" type="checkbox" name="extra-goods" value="Молоко">
                 <span class="worksheet__mark worksheet__mark--checkbox"></span>
                 <span class="worksheet__label">Молоко</span>
               </label>
@@ -151,12 +151,10 @@
   <footer class="page-footer">
     <div class="page-footer__container container">
       <div class="page-footer__contacts page-footer__contacts--dark contacts">
-        <p class="contacts__invitation">Приглашаем к сотрудничеству дилеров!</p>
-        <div class="contacts-wrapper">
-          <address class="contacts__address">
-            ул. Большая Конюшенная, д. 19/8<br>Санкт-Петербург
-          </address>
-        </div>
+        <p class="contacts__invitation">Приглашаем<br> к сотрудничеству дилеров!</p>
+        <address class="contacts__address">
+          ул. Большая Конюшенная, д. 19/8<br>Санкт-Петербург
+        </address>
       </div>
       <div class="contacts__map">
         <script type="text/javascript" charset="utf-8" async
@@ -187,7 +185,7 @@
         </div>
         <div class="page-footer__partner">
           <a class="page-footer__partner-link" href="https://htmlacademy.ru">
-            <p class="page-footer__partner-name">HTML Academy</p>
+            HTML Academy
           </a>
           <a class="page-footer__partner-link" href="https://htmlacademy.ru">
             <svg class="page-footer__partner-logo" aria-hidden="true" focusable="false" width="27" height="34"
