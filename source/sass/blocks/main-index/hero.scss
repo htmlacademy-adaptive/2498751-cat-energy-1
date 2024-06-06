@@ -6,7 +6,6 @@
   background-repeat: no-repeat;
   background-position: 0% 0%;
   position: relative;
-  z-index: -2;
   padding-top: 27px;
 
   &::after {
@@ -16,8 +15,8 @@
     height: 302px;
     left: 0;
     top: 0;
-    background: url("../../../img/background-layer.png") no-repeat;
-    z-index: -1;
+    background-color: $color-background-brand;
+    opacity: 85%;
   }
 }
 
@@ -27,6 +26,8 @@
   text-align: center;
   margin-bottom: 25px;
   color: $color-text-tertiary;
+  z-index: 1;
+  position: relative;
 }
 
 .hero__description {
@@ -36,6 +37,8 @@
   text-transform: uppercase;
   margin-bottom: 20px;
   color: $color-text-tertiary;
+  z-index: 1;
+  position: relative;
 }
 
 .hero__link {
@@ -50,4 +53,6 @@
 .hero__image {
   display: block;
   margin: 0 auto;
+  z-index: 1;
+  position: relative;
 }
