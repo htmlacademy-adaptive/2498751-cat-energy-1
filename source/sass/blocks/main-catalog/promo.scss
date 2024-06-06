@@ -6,7 +6,6 @@
   background-repeat: no-repeat;
   background-position: center;
   position: relative;
-  z-index: -2;
 
   &::after {
     position: absolute;
@@ -14,9 +13,8 @@
     width: 280px;
     height: 290px;
     top: 0;
-    background-image: url("../../../img/background-layer.png");
-    background-repeat: no-repeat;
-    z-index: -1;
+    background-color: $color-background-brand;
+    opacity: 85%;
   }
 }
 
@@ -26,6 +24,8 @@
   padding-top: 59px;
   text-align: center;
   color: $color-text-tertiary;
+  z-index: 1;
+  position: relative;
 }
 
 .promo__description::before {
