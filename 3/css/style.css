@@ -162,7 +162,6 @@ a {
   background-repeat: no-repeat;
   background-position: 0% 0%;
   position: relative;
-  z-index: -2;
   padding-top: 27px;
 }
 .hero__container::after {
@@ -172,8 +171,8 @@ a {
   height: 302px;
   left: 0;
   top: 0;
-  background: url("../../../img/background-layer.png") no-repeat;
-  z-index: -1;
+  background-color: #68b738;
+  opacity: 85%;
 }
 
 .hero__title {
@@ -182,6 +181,8 @@ a {
   text-align: center;
   margin-bottom: 25px;
   color: #ffffff;
+  z-index: 1;
+  position: relative;
 }
 
 .hero__description {
@@ -191,6 +192,8 @@ a {
   text-transform: uppercase;
   margin-bottom: 20px;
   color: #ffffff;
+  z-index: 1;
+  position: relative;
 }
 
 .hero__link {
@@ -205,6 +208,8 @@ a {
 .hero__image {
   display: block;
   margin: 0 auto;
+  z-index: 1;
+  position: relative;
 }
 
 .diet-plans__container {
@@ -554,7 +559,6 @@ a {
   background-repeat: no-repeat;
   background-position: center;
   position: relative;
-  z-index: -2;
 }
 .promo__wrapper::after {
   position: absolute;
@@ -562,9 +566,8 @@ a {
   width: 280px;
   height: 290px;
   top: 0;
-  background-image: url("../../../img/background-layer.png");
-  background-repeat: no-repeat;
-  z-index: -1;
+  background-color: #68b738;
+  opacity: 85%;
 }
 
 .promo__description {
@@ -573,6 +576,8 @@ a {
   padding-top: 59px;
   text-align: center;
   color: #ffffff;
+  z-index: 1;
+  position: relative;
 }
 
 .promo__description::before {
