@@ -1,9 +1,14 @@
+.worksheet {
+  padding-top: 27px;
+  padding-bottom: 32px;
+}
+
 .worksheet__title {
   @include gap-reset;
   font: var(--font-oswald-header-large);
   margin-bottom: 37px;
   padding: 0 20px;
-  color: $color-text-primary;
+  color: var(--color-text-primary);
 }
 
 .worksheet__fill {
@@ -12,11 +17,11 @@
   text-transform: uppercase;
   padding: 0 20px;
   margin-bottom: 39px;
-  color: $color-text-primary;
+  color: var(--color-text-primary);
 }
 
 .worksheet__group:nth-child(-n+2) {
-  border-bottom: 1px solid $color-border;
+  border-bottom: 1px solid var(--color-border);
   padding-bottom: 24px;
 }
 
@@ -32,7 +37,7 @@
   display: flex;
   flex-direction: column;
   gap: 14px;
-  color: $color-text-secondary;
+  color: var(--color-text-secondary);
 }
 
 .worksheet__item {
@@ -48,14 +53,14 @@
   text-transform: uppercase;
   width: 100%;
   padding: 14px 15px 13px;
-  border: 1px solid $color-input-quiet;
-  color: $color-text-secondary;
+  border: 1px solid var(--color-input-quiet);
+  color: var(--color-text-secondary);
 }
 
 .worksheet__legend {
   font: var(--font-oswald-header-small);
   margin-bottom: 35px;
-  color: $color-text-primary;
+  color: var(--color-text-primary);
 }
 
 .worksheet__textarea {
@@ -65,8 +70,8 @@
   box-sizing: border-box;
   min-height: 150px;
   padding: 14px 14px 14px 15px;
-  border: 1px solid $color-input-quiet;
-  color: $color-text-primary;
+  border: 1px solid var(--color-input-quiet);
+  color: var(--color-text-primary);
 }
 
 .worksheet__label {
@@ -81,7 +86,6 @@
 
 .worksheet__action {
   padding: 0 20px;
-  margin-bottom: 32px;
 }
 
 .worksheet__button {
@@ -92,7 +96,7 @@
 .worksheet__note {
   @include gap-reset;
   font: var(--font-lato-base-average);
-  color: $color-text-primary;
+  color: var(--color-text-primary);
   text-align: center;
 }
 

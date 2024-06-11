@@ -6,11 +6,11 @@
   margin: 0;
   border: none;
   cursor: pointer;
-  color: $color-text-tertiary;
-  background-color: $color-button;
+  color: var(--color-text-tertiary);
+  background-color: var(--color-button);
 }
 
 .button--light {
-  color: $color-text-secondary;
-  background-color: $color-button-light;
+  color: var(--color-text-secondary);
+  background-color: var(--color-button-light);
 }

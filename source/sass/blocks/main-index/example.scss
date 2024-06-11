@@ -1,8 +1,5 @@
-@import "../common-blocks/vars";
-@import "../common-blocks/mix";
-
 .example__container {
-  background-color: $color-background-tertiary;
+  background-color: var(--color-background-tertiary);
   padding: 0 20px;
 }
 
@@ -11,29 +8,29 @@
   font: var(--font-oswald-header-xlarge);
   padding-top: 25px;
   margin-bottom: 40px;
-  color: $color-text-primary;
+  color: var(--color-text-primary);
 }
 
 .example__description {
   @include gap-reset;
   font: var(--font-lato-base);
   margin-bottom: 20px;
-  color: $color-text-secondary;
+  color: var(--color-text-secondary);
 }
 
 .example__cost {
   font: var(--font-oswald-small-high);
   text-transform: uppercase;
   margin: 20px 0;
-  color: $color-text-primary;
+  color: var(--color-text-primary);
 }
 
 .example__result {
   font: var(--font-oswald-header);
-  color: $color-text-primary;
+  color: var(--color-text-primary);
 }
 
 .example__parameter {
   font: var(--font-lato-small-low);
-  color: $color-text-secondary;
+  color: var(--color-text-secondary);
 }

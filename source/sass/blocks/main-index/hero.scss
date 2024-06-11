@@ -1,12 +1,9 @@
-@import "../common-blocks/vars";
-@import "../common-blocks/mix";
-
-.hero__container {
+.hero {
   background-image: url("../../../img/background-mobile.jpg");
   background-repeat: no-repeat;
   background-position: 0% 0%;
   position: relative;
-  padding-top: 27px;
+  padding: 27px 10px 20px;
 
   &::after {
     position: absolute;
@@ -15,7 +12,7 @@
     height: 302px;
     left: 0;
     top: 0;
-    background-color: $color-background-brand;
+    background-color: var(--color-background-brand);
     opacity: 85%;
   }
 }
@@ -25,7 +22,7 @@
   font: var(--font-oswald-header-large);
   text-align: center;
   margin-bottom: 25px;
-  color: $color-text-tertiary;
+  color: var(--color-text-tertiary);
   z-index: 1;
   position: relative;
 }
@@ -36,7 +33,7 @@
   text-align: center;
   text-transform: uppercase;
   margin-bottom: 20px;
-  color: $color-text-tertiary;
+  color: var(--color-text-tertiary);
   z-index: 1;
   position: relative;
 }
@@ -46,7 +43,6 @@
   width: 280px;
   text-align: center;
   margin: 0 auto;
-  margin-bottom: 20px;
   padding: 10px;
 }
 

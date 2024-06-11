@@ -1,8 +1,5 @@
-@import "../common-blocks/vars";
-@import "../common-blocks/mix";
-
 .extra-card__link {
-  color: $color-text-fivefold;
+  color: var(--color-text-fivefold);
 }
 
 .extra-card__title {
@@ -10,7 +7,7 @@
   font: var(--font-oswald-base);
   text-transform: uppercase;
   margin-bottom: 13px;
-  color: $color-text-fivefold;
+  color: var(--color-text-fivefold);
 }
 
 .extra-card__info {
@@ -21,12 +18,12 @@
 
 .extra-card__pack {
   font: var(--font-lato-base-small);
-  color: $color-text-secondary;
+  color: var(--color-text-secondary);
 }
 
 .extra-card__price {
   font: var(--font-lato-base-small);
-  color: $color-text-secondary;
+  color: var(--color-text-secondary);
 }
 
 .extra-card__button {

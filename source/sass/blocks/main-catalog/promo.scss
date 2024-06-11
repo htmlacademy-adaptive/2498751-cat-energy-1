@@ -13,7 +13,7 @@
     width: 280px;
     height: 290px;
     top: 0;
-    background-color: $color-background-brand;
+    background-color: var(--color-background-brand);
     opacity: 85%;
   }
 }
@@ -23,7 +23,7 @@
   font: var(--font-lato-xlarge);
   padding-top: 59px;
   text-align: center;
-  color: $color-text-tertiary;
+  color: var(--color-text-tertiary);
   z-index: 1;
   position: relative;
 }
