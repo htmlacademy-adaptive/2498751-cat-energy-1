@@ -1,0 +1,18 @@
+.contacts {
+  padding: 26px 20px 26px;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.contacts__invitation {
+  @include gap-reset;
+  font: var(--font-oswald-xlarge);
+  text-transform: uppercase;
+  color: var(--color-text-quaternary);
+}
+
+.contacts__address {
+  font: var(--font-lato-large);
+  color: var(--color-text-secondary);
+}

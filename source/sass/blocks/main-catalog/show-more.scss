@@ -1,0 +1,39 @@
+ .show-more {
+   border-bottom: 1px solid var(--color-border-catalog);
+   padding: 25px 20px;
+   border-top: 1px solid var(--color-border-catalog);
+ }
+
+ .show-more__lead {
+   @include gap-reset;
+   font: var(--font-oswald-xlarge);
+   text-align: center;
+   text-transform: uppercase;
+   margin-bottom: 8px;
+   color: var(--color-text-quaternary);
+ }
+
+ .show-more__lead::before {
+   content: "";
+   display: block;
+   width: 30px;
+   height: 30px;
+   margin: 0 auto;
+   margin-bottom: 23px;
+   background-image: url("../../../img/showmore-plus.svg");
+   background-size: contain;
+   background-repeat: no-repeat;
+   background-position: center;
+ }
+
+ .show-more__description {
+   @include gap-reset;
+   font: var(--font-lato-small-high);
+   color: var(--color-text-secondary);
+   text-align: center;
+   margin-bottom: 21px;
+ }
+
+ .show-more__button {
+   padding: 10px;
+ }

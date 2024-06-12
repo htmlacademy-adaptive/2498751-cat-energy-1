@@ -1,0 +1,53 @@
+.diet-plans__container {
+  padding: 0 20px;
+}
+
+.diet-plans__list {
+  @include list-reset;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.diet-plans__item {
+  background-color: var(--color-background-secondary);
+  padding: 0 20px 18px ;
+}
+
+.diet-plans__title {
+  @include gap-reset;
+  font: var(--font-oswald-header-medium);
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 29px;
+  color: var(--color-text-primary);
+}
+
+.diet-plans__description {
+  @include gap-reset;
+  font: var(--font-lato-base);
+  padding-bottom: 23px;
+  margin-bottom: 15px;
+  border-bottom: 1px solid var(--color-border);
+  color: var(--color-text-secondary);
+}
+
+.diet-plans__link {
+  font: var(--font-oswald-base);
+  display: block;
+  text-transform: uppercase;
+  position: relative;
+  color: var(--color-text-primary);
+}
+
+.diet-plans__link::after {
+  position: absolute;
+  display: block;
+  content: "";
+  width: 32px;
+  height: 10px;
+  background-image: url("../../../img/icon-arrow.svg");
+  background-repeat: no-repeat;
+  left: 102px;
+  top: 3px;
+}

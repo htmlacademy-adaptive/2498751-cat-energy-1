@@ -1,0 +1,19 @@
+.advantages__container {
+  padding: 0 20px;
+}
+
+.advantages__title {
+  @include gap-reset;
+  font: var(--font-oswald-header-xlarge);
+  margin-bottom: 40px;
+  color: var(--color-text-primary);
+}
+
+.advantages__list {
+  @include list-reset;
+  font: var(--font-lato-base);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  color: var(--color-text-secondary);
+}

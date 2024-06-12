@@ -1,0 +1,31 @@
+.page-footer__logo {
+  display: flex;
+  justify-content: center;
+  min-width: 128px;
+  border-bottom: 1px solid var(--color-border);
+  padding-bottom: 20px;
+}
+
+.page-footer__links {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px 20px;
+  background-color: var(--color-background-secondary);
+}
+
+.page-footer__partner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.page-footer__partner-link {
+  font: var(--font-lato-xlarge);
+  color: var(--color-text-secondary);
+}
+
+.page-footer__contacts--dark {
+  background-color: var(--color-background-secondary);
+}
+

@@ -1,0 +1,31 @@
+.extra-card__link {
+  color: var(--color-text-fivefold);
+}
+
+.extra-card__title {
+  @include gap-reset;
+  font: var(--font-oswald-base);
+  text-transform: uppercase;
+  margin-bottom: 13px;
+  color: var(--color-text-fivefold);
+}
+
+.extra-card__info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.extra-card__pack {
+  font: var(--font-lato-base-small);
+  color: var(--color-text-secondary);
+}
+
+.extra-card__price {
+  font: var(--font-lato-base-small);
+  color: var(--color-text-secondary);
+}
+
+.extra-card__button {
+  padding: 10px;
+}
