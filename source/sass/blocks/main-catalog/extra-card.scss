@@ -4,28 +4,59 @@
 
 .extra-card__title {
   @include gap-reset;
-  font: var(--font-oswald-base);
+  font: var(--font-primary-base);
   text-transform: uppercase;
   margin-bottom: 13px;
   color: var(--color-text-fivefold);
+
+  @media (width >=$tablet-width) {
+    font: var(--font-primary-xxxlarge-lower);
+    margin-bottom: 25px;
+  }
+
+  @media (width >=$desktop-width) {
+    margin: 0;
+  }
 }
 
 .extra-card__info {
   display: flex;
   justify-content: space-between;
   margin-bottom: 15px;
-}
 
-.extra-card__pack {
-  font: var(--font-lato-base-small);
-  color: var(--color-text-secondary);
-}
+  @media (width >=$tablet-width) {
+    gap: 49px;
+  }
 
-.extra-card__price {
-  font: var(--font-lato-base-small);
-  color: var(--color-text-secondary);
+  @media (width >=$desktop-width) {
+    margin: 0;
+  }
 }
 
 .extra-card__button {
   padding: 10px;
+
+  @media (width >=$desktop-width) {
+    max-width: 244px;
+  }
+}
+
+.extra-card__content {
+  font: var(--font-secondary-base-small);
+  color: var(--color-text-secondary);
+
+  @media (width >=$tablet-width) {
+    font: var(--font-secondary-xlarge);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.extra-card {
+  @media (width >=$desktop-width) {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    column-gap: 40px;
+  }
 }

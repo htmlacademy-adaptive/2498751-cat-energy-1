@@ -17,11 +17,11 @@
       <a class="header__logo-letters">
         <img class="header__logo-name" src="img/logo-name.svg" width="128" height="24" alt="Cat Energy">
       </a>
-      <nav class="navigation visually-hidden">
+      <nav class="navigation navigation--form">
         <button class="navigation__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
         <ul class="navigation__list">
           <li class="navigation__item">
-            <a class="navigation__link main-navigation__link--current" href="#">Главная</a>
+            <a class="navigation__link navigation__link--current" href="#">Главная</a>
           </li>
           <li class="navigation__item">
             <a class="navigation__link" href="catalog.html">Каталог продукции</a>
@@ -40,6 +40,7 @@
 
       <p class="worksheet__fill">Заполните анкету, и мы подберем<br> программу питания для вашего кота</p>
       <form class="worksheet__form" action="https://echo.htmlacademy.ru" method="post">
+        <div class="worksheet__wrapper">
         <fieldset class="worksheet__group worksheet__group--info">
           <legend class="visually-hidden">Информация о питомце</legend>
           <ul class="worksheet__list">
@@ -84,15 +85,16 @@
             </li>
           </ul>
         </fieldset>
+      </div>
 
         <fieldset class="worksheet__group worksheet__group--contacts">
-          <legend class="worksheet__legend">Контактные данные<br> (владельца кота)</legend>
-          <ul class="worksheet__list">
-            <li class="worksheet__item">
+          <legend class="worksheet__legend">Контактные данные (владельца кота)</legend>
+          <ul class="worksheet__list worksheet__list--contacts">
+            <li class="worksheet__item worksheet__item--contacts">
               <label class="worksheet__label" for="e-mail">E-mail:*</label>
               <input class="worksheet__input" type="email" id="e-mail" name="e-mail" placeholder="kuklachev@gmail.com">
             </li>
-            <li class="worksheet__item">
+            <li class="worksheet__item worksheet__item--contacts">
               <label class="worksheet__label" for="phone">Телефон:*</label>
               <input class="worksheet__input" type="tel" id="phone" name="phone" placeholder="8 (960) 900-60-90">
             </li>
@@ -100,14 +102,14 @@
         </fieldset>
 
         <fieldset class="worksheet__group worksheet__group--comment">
-          <legend class="worksheet__legend">Комментарий</legend>
+          <legend class="worksheet__legend worksheet__legend--comment">Комментарий</legend>
           <textarea class="worksheet__textarea" name="text-comment"
             placeholder="Расскажите обо всех повадках кота"></textarea>
         </fieldset>
 
         <fieldset class="worksheet__group worksheet__group--extra">
-          <legend class="worksheet__legend">Дополнительно</legend>
-          <ul class="worksheet__list">
+          <legend class="worksheet__legend worksheet__legend--extra">Дополнительно</legend>
+          <ul class="worksheet__list worksheet__list--extra">
             <li class="worksheet__item">
               <label class="worksheet__control">
                 <input class="worksheet__input" type="checkbox" name="extra-goods" value="Сахарозаменитель" checked>
