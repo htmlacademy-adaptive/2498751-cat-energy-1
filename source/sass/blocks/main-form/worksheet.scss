@@ -1,43 +1,58 @@
 .worksheet {
-  padding-top: 27px;
-  padding-bottom: 32px;
+  padding: 27px 20px 32px;
+
+  @media (width >=$tablet-width) {
+    padding: 50px 70px 60px;
+  }
+
+  @media (width >=$desktop-width) {
+    padding: 60px 110px 80px;
+  }
 }
 
 .worksheet__title {
   @include gap-reset;
-  font: var(--font-oswald-header-large);
+  font: var(--font-primary-header-large);
   margin-bottom: 37px;
-  padding: 0 20px;
   color: var(--color-text-primary);
+
+  @media (width >=$tablet-width) {
+    font: var(--font-primary-header-xxlarge);
+    margin-bottom: 55px;
+  }
+
 }
 
 .worksheet__fill {
   @include gap-reset;
-  font: var(--font-oswald-small-average);
+  font: var(--font-primary-small-average);
   text-transform: uppercase;
-  padding: 0 20px;
   margin-bottom: 39px;
   color: var(--color-text-primary);
-}
 
-.worksheet__group:nth-child(-n+2) {
-  border-bottom: 1px solid var(--color-border);
-  padding-bottom: 24px;
+  @media (width >=$tablet-width) {
+    font: var(--font-primary-xxxlarge);
+    margin-bottom: 66px;
+  }
 }
 
 .worksheet__group {
   @include fieldset-reset;
-  padding: 0 20px;
 }
 
 .worksheet__list {
   @include list-reset;
-  font: var(--font-oswald-large);
+  font: var(--font-primary-large);
   text-transform: uppercase;
   display: flex;
   flex-direction: column;
   gap: 14px;
   color: var(--color-text-secondary);
+
+  @media (width >=$tablet-width) {
+    font: var(--font-primary-xxxlarge-low);
+    gap: 20px;
+  }
 }
 
 .worksheet__item {
@@ -49,22 +64,47 @@
 
 .worksheet__input {
   @include list-reset;
-  font: var(--font-oswald-large);
+  font: var(--font-primary-large);
   text-transform: uppercase;
   width: 100%;
   padding: 14px 15px 13px;
   border: 1px solid var(--color-input-quiet);
   color: var(--color-text-secondary);
+
+  @media (width >=$tablet-width) {
+    font: var(--font-primary-xxxlarge-low);
+  }
 }
 
 .worksheet__legend {
-  font: var(--font-oswald-header-small);
+  font: var(--font-primary-header-small);
   margin-bottom: 35px;
   color: var(--color-text-primary);
+
+  @media (width >=$tablet-width) {
+    font: var(--font-primary-header-large);
+    margin-bottom: 76px;
+  }
+}
+
+.worksheet__legend--comment {
+  @media (width >=$tablet-width) {
+    margin-bottom: 87px;
+  }
+
+  @media (width >=$desktop-width) {
+    margin-bottom: 78px;
+  }
+}
+
+.worksheet__legend--extra {
+  @media (width >=$tablet-width) {
+    margin-bottom: 57px;
+  }
 }
 
 .worksheet__textarea {
-  font: var(--font-oswald-large);
+  font: var(--font-primary-large);
   text-transform: uppercase;
   width: 100%;
   box-sizing: border-box;
@@ -72,6 +112,10 @@
   padding: 14px 14px 14px 15px;
   border: 1px solid var(--color-input-quiet);
   color: var(--color-text-primary);
+
+  @media (width >=$tablet-width) {
+    font: var(--font-primary-xxxlarge);
+  }
 }
 
 .worksheet__label {
@@ -85,37 +129,161 @@
 }
 
 .worksheet__action {
-  padding: 0 20px;
+  @media (width >=$tablet-width) {
+    display: flex;
+    gap: 60px;
+  }
 }
 
 .worksheet__button {
   padding: 10px;
   margin-bottom: 21px;
+
+  @media (width >=$tablet-width) {
+    flex-basis: 50%;
+    font: var(--font-primary-xxxlarge-low);
+    margin: 0;
+  }
 }
 
 .worksheet__note {
   @include gap-reset;
-  font: var(--font-lato-base-average);
+  font: var(--font-secondary-base-average);
   color: var(--color-text-primary);
   text-align: center;
+
+  @media (width >=$tablet-width) {
+    flex-basis: 50%;
+    text-align: left;
+    font: var(--font-secondary-xlarge-low);
+  }
 }
 
 .worksheet__group--info {
   margin-bottom: 22px;
+  padding-bottom: 24px;
+  position: relative;
+
+  &::after {
+    @media ($mobile-width <=width <=$tablet-width) {
+      position: absolute;
+      content: "";
+      height: 1px;
+      background-color: var(--color-border);
+      bottom: 0;
+      right: -20px;
+      left: -20px;
+    }
+
+    @media (width >=$tablet-width) {
+      display: none;
+    }
+  }
+
+  @media (width >=$tablet-width) {
+    margin-bottom: 72px;
+  }
+
+  @media (width >=$desktop-width) {
+    flex-basis: 50%;
+    margin: 0;
+    padding: 0;
+  }
 }
 
 .worksheet__group--purpose {
   margin-bottom: 26px;
+  position: relative;
+  padding-bottom: 19px;
+
+  &::after {
+    @media ($mobile-width <=width <=$tablet-width) {
+      position: absolute;
+      content: "";
+      height: 1px;
+      background-color: var(--color-border);
+      bottom: 0;
+      right: -20px;
+      left: -20px;
+    }
+
+    @media (width >=$tablet-width) {
+      display: none;
+    }
+  }
+
+  @media (width >=$tablet-width) {
+    padding: 23px 27px 27px;
+    margin-bottom: 65px;
+    border: 1px solid var(--color-input-quiet);
+  }
+
+  @media (width >=$desktop-width) {
+    flex-basis: 50%;
+    padding: 25px 28px;
+    margin: 0;
+  }
 }
 
 .worksheet__group--contacts {
   margin-bottom: 24px;
+
+  @media (width >=$tablet-width) {
+    margin-bottom: 65px;
+  }
+
+  @media (width >=$desktop-width) {
+    margin-bottom: 70px;
+  }
+
 }
 
 .worksheet__group--comment {
   margin-bottom: 23px;
+
+  @media (width >=$tablet-width) {
+    margin-bottom: 65px;
+  }
 }
 
 .worksheet__group--extra {
   margin-bottom: 34px;
+
+  @media (width >=$tablet-width) {
+    margin-bottom: 52px;
+  }
+}
+
+.worksheet__list--extra {
+  @media (width >=$tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 32px;
+  }
+
+  @media (width >=$desktop-width) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.worksheet__wrapper {
+  @media (width >=$desktop-width) {
+    display: flex;
+    gap: 80px;
+    margin-bottom: 70px;
+  }
+}
+
+.worksheet__list--contacts {
+  @media (width >=$desktop-width){
+  display: flex;
+  flex-direction: row;
+  gap: 80px;
+  }
+}
+
+.worksheet__item--contacts {
+  @media (width >=$desktop-width) {
+    flex-basis: 50%;
+  }
 }

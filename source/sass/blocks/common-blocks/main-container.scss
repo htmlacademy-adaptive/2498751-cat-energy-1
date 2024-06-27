@@ -2,11 +2,15 @@
   flex-grow: 1;
 }
 
-.main-container__diet-plans {
-  margin-bottom: 20px;
-}
-
 .main-container__advantages {
   margin-bottom: 49px;
-}
 
+  @media (width >= $tablet-width) {
+    border-bottom: 1px solid var(--color-border-light);
+    margin: 0;
+  }
+
+  @media (width >= $desktop-width) {
+    border: none;
+  }
+}
