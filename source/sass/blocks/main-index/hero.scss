@@ -15,18 +15,18 @@
     background-color: var(--color-background-brand);
     opacity: 85%;
 
-    @media ($tablet-width <=width <=$desktop-width) {
+    @media ($tablet-width <= width <= $desktop-width) {
       display: none;
     }
   }
 
-  @media ($tablet-width <=width <=$desktop-width) {
+  @media ($tablet-width <= width <= $desktop-width) {
     background-color: var(--background-color-primary);
     background-image: none;
     padding: 40px 110px 0;
   }
 
-  @media (width >=$desktop-width) {
+  @media (width >= $desktop-width) {
     padding: 55px 110px 0;
   }
 }
@@ -40,7 +40,7 @@
   z-index: 1;
   position: relative;
 
-  @media (width >=$tablet-width) {
+  @media (width >= $tablet-width) {
     color: var(--color-text-primary);
     font: var(--font-primary-header-xxlarge);
     text-align: left;
@@ -58,7 +58,7 @@
   z-index: 1;
   position: relative;
 
-  @media (width >=$tablet-width) {
+  @media (width >= $tablet-width) {
     color: var(--color-text-primary);
     font: var(--font-primary-xxxlarge-lower);
     text-align: left;
@@ -68,9 +68,9 @@
 .hero__link {
   display: block;
   text-align: center;
-  padding: 10px 0;
+  padding: 10px;
 
-  @media (width >=$tablet-width) {
+  @media (width >= $tablet-width) {
     position: absolute;
     left: 110px;
     top: 270px;

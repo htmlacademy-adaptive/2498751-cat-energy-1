@@ -4,7 +4,7 @@
   justify-content: space-between;
   gap: 10px;
 
-  @media (width >=$tablet-width) {
+  @media (width >= $tablet-width) {
     padding: 60px 70px;
   }
 }
@@ -15,7 +15,7 @@
   text-transform: uppercase;
   color: var(--color-text-quaternary);
 
-  @media (width >=$tablet-width) {
+  @media (width >= $tablet-width) {
     max-width: 163px;
     font: var(--font-primary-xxxlarge-low);
   }
@@ -25,7 +25,7 @@
   font: var(--font-secondary-large);
   color: var(--color-text-secondary);
 
-  @media (width >=$tablet-width) {
+  @media (width >= $tablet-width) {
     max-width: 157px;
     text-align: right;
     font: var(--font-secondary-xlarge);
@@ -34,7 +34,7 @@
 
 
 .contacts__map {
-  @media (width >=$tablet-width) {
+  @media (width >= $tablet-width) {
     height: 400px;
   }
 

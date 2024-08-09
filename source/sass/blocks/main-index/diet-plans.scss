@@ -1,11 +1,11 @@
-.diet-plans__container {
+.diet-plans {
   padding: 0 20px 20px;
 
-  @media (min-width: $tablet-width) {
+  @media (width >= $tablet-width) {
     padding: 0 30px 45px;
   }
 
-  @media (min-width: $desktop-width) {
+  @media (width >= $desktop-width) {
     padding: 82px 110px;
   }
 }
@@ -16,11 +16,11 @@
   flex-direction: column;
   gap: 20px;
 
-  @media (min-width: $tablet-width) {
+  @media (width >= $tablet-width) {
     gap: 30px;
   }
 
-  @media (min-width: $desktop-width) {
+  @media (width >= $desktop-width) {
     flex-direction: row;
     gap: 80px;
   }
@@ -28,13 +28,13 @@
 
 .diet-plans__item {
   background-color: var(--color-background-secondary);
-  padding: 0 20px 18px ;
+  padding: 0 20px 18px;
 
-  @media (min-width: $tablet-width) {
+  @media (width >= $tablet-width) {
     padding: 77px 53px;
   }
 
-  @media (min-width: $desktop-width) {
+  @media (width >= $desktop-width) {
     flex-basis: 50%;
     padding: 47px 52px 59px;
   }
@@ -48,7 +48,7 @@
   margin-bottom: 29px;
   color: var(--color-text-primary);
 
-  @media (min-width: $tablet-width) {
+  @media (width >= $tablet-width) {
     font: var(--font-primary-header-large);
     text-align: left;
   }
@@ -62,8 +62,8 @@
   border-bottom: 1px solid var(--color-border);
   color: var(--color-text-secondary);
 
-  @media (min-width: $tablet-width) {
-    border:none;
+  @media (width >= $tablet-width) {
+    border: none;
     font: var(--font-secondary-xxlarge);
     padding: 0;
     margin-bottom: 52px;

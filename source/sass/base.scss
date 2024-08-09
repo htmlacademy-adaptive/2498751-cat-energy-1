@@ -52,6 +52,10 @@
   --color-plus-showmore:         #d3d3d3;
 }
 
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;

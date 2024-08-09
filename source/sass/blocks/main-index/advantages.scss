@@ -1,12 +1,14 @@
-.advantages__container {
-  padding: 0 20px;
+.advantages {
+  padding: 0 20px 49px;
 
   @media (width >= $tablet-width) {
     padding: 0 109px 47px 30px;
+    border-bottom: 1px solid var(--color-border-light);
   }
 
   @media (width >= $desktop-width) {
     padding: 0 106px 69px;
+    border: none;
   }
 }
 

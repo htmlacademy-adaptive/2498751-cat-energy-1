@@ -1,4 +1,4 @@
-.example__container {
+.example {
   background-color: var(--color-background-tertiary);
   padding: 0 20px;
 
@@ -103,7 +103,7 @@
     margin: 0 -30px;
   }
 
-  @media (width >=$desktop-width) {
+  @media (width >= $desktop-width) {
     background-color: var(--color-background-secondary);
   }
 }

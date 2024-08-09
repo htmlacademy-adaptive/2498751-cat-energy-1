@@ -2,11 +2,11 @@
   padding-top: 27px;
   padding-bottom: 26px;
 
-  @media (width >=$tablet-width) {
+  @media (width >= $tablet-width) {
     padding: 40px 30px 70px;
   }
 
-  @media (width >=$desktop-width) {
+  @media (width >= $desktop-width) {
     padding: 19px 110px 76px;
   }
 }
@@ -18,7 +18,7 @@
   text-align: center;
   color: var(--color-text-primary);
 
-  @media (width >=$tablet-width) {
+  @media (width >= $tablet-width) {
     font: var(--font-primary-header-xxlarge);
     text-align: left;
     margin-bottom: 84px;
@@ -28,13 +28,13 @@
 .products-catalog__list {
   @include list-reset;
 
-  @media (width >=$tablet-width) {
+  @media (width >= $tablet-width) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 60px;
   }
 
-  @media (width >=$desktop-width) {
+  @media (width >= $desktop-width) {
     grid-template-columns: repeat(4, 1fr);
     gap: 80px;
   }
@@ -44,7 +44,7 @@
   border-top: 1px solid var(--color-border-catalog);
   padding: 20px 20px 25px;
 
-  @media (width >=$tablet-width) {
+  @media (width >= $tablet-width) {
     border: none;
     padding: 0 37px 40px;
     background-color: var(--color-background-secondary);
