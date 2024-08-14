@@ -1,6 +1,6 @@
 .example {
   background-color: var(--color-background-tertiary);
-  padding: 0 20px;
+  padding: 25px 20px 0;
 
   @media (width >= $tablet-width) {
     background-color: var(--color-background-primary);
@@ -24,7 +24,6 @@
 .example__title {
   @include gap-reset;
   font: var(--font-primary-header-xlarge);
-  padding-top: 25px;
   margin-bottom: 40px;
   color: var(--color-text-primary);
 

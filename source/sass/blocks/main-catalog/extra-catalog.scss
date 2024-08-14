@@ -1,5 +1,5 @@
 .extra-catalog {
-  padding: 0 20px 35px;
+  padding: 26px 20px 35px;
 
   @media (width >= $tablet-width) {
     padding: 0 30px 75px;
@@ -64,7 +64,7 @@
 }
 
 .extra-catalog__wrapper {
-  @media (width >=$desktop-width) {
+  @media (width >= $desktop-width) {
     display: flex;
     justify-content: space-between;
     gap: 81px;

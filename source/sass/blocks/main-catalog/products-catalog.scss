@@ -1,6 +1,5 @@
 .products-catalog {
   padding-top: 27px;
-  padding-bottom: 26px;
 
   @media (width >= $tablet-width) {
     padding: 40px 30px 70px;
@@ -15,7 +14,7 @@
   @include gap-reset;
   font: var(--font-primary-header-large);
   margin-bottom: 41px;
-  text-align: center;
+  padding: 0 20px;
   color: var(--color-text-primary);
 
   @media (width >= $tablet-width) {
