@@ -3,16 +3,37 @@
   display: flex;
   justify-content: space-between;
   gap: 10px;
+
+  @media (width >= $tablet-width) {
+    padding: 60px 70px;
+  }
 }
 
 .contacts__invitation {
   @include gap-reset;
-  font: var(--font-oswald-xlarge);
+  font: var(--font-primary-xlarge);
   text-transform: uppercase;
   color: var(--color-text-quaternary);
+
+  @media (width >= $tablet-width) {
+    max-width: 163px;
+    font: var(--font-primary-xxxlarge-low);
+  }
 }
 
 .contacts__address {
-  font: var(--font-lato-large);
+  font: var(--font-secondary-large);
   color: var(--color-text-secondary);
+
+  @media (width >= $tablet-width) {
+    max-width: 157px;
+    text-align: right;
+    font: var(--font-secondary-xlarge);
+  }
+}
+
+.contacts__map {
+  @media (width >= $tablet-width) {
+    height: 400px;
+  }
 }

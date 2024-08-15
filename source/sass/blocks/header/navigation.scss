@@ -1,3 +1,15 @@
+.navigation {
+display: flex;
+}
+
+.navigation a {
+  color: var(--color-text-primary);
+
+  @media (min-width: $desktop-width) {
+    color: var(--color-text-tertiary);
+  }
+}
+
 .navigation__toggle {
   width: 24px;
   height: 24px;
@@ -6,4 +18,22 @@
   border: none;
   cursor: pointer;
   background-color: var(--color-background-primary);
+
+  @media (width >= $tablet-width) {
+    display: none;
+  }
+}
+
+.navigation__list {
+  @include list-reset;
+
+  @media (width >= $tablet-width) {
+    display: flex;
+    align-items: center;
+    gap: 33px;
+  }
+}
+
+.navigation--form a {
+  color: var(--color-text-primary);
 }

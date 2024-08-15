@@ -17,7 +17,7 @@
       <a class="header__logo-letters">
         <img class="header__logo-name" src="img/logo-name.svg" width="128" height="24" alt="Cat Energy">
       </a>
-      <nav class="navigation visually-hidden">
+      <nav class="navigation">
         <button class="navigation__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
         <ul class="navigation__list">
           <li class="navigation__item">
@@ -35,18 +35,17 @@
   </header>
 
   <main class="main-container">
-    <section class="hero container">
+    <section class="hero">
 
-        <h1 class="hero__title">Функциональное питание для котов</h1>
+      <h1 class="hero__title">Функциональное питание для котов</h1>
 
-        <p class="hero__description">Занялся собой? Займись котом!</p>
-        <img class="hero__image" src="img/hero-mobile.png" width="280" height="270" alt="Упаковка питания Cat Energy">
+      <p class="hero__description">Занялся собой? Займись котом!</p>
+      <img class="hero__image" src="img/hero-mobile.png" width="280" height="270" alt="Упаковка питания Cat Energy">
 
       <a class="hero__link button" href="form.html">Подобрать программу</a>
     </section>
 
-    <section class="main-container__diet-plans diet-plans">
-      <div class="diet-plans__container container">
+    <section class="diet-plans">
         <h2 class="visually-hidden">Подбор программы питания</h2>
 
         <ul class="diet-plans__list">
@@ -66,11 +65,9 @@
             <a class="diet-plans__link" href="catalog.html">Каталог PRO</a>
           </li>
         </ul>
-      </div>
     </section>
 
-    <section class="main-container__advantages advantages">
-      <div class="advantages__container container">
+    <section class="advantages">
         <h2 class="advantages__title">Как это работает</h2>
 
         <ul class="advantages__list">
@@ -87,44 +84,47 @@
             Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!
           </li>
         </ul>
-      </div>
     </section>
 
-    <section class="main-container__example example">
-      <div class="example__container container">
+    <section class="example">
         <h2 class="example__title">Живой пример</h2>
 
-        <p class="example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy
-          Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по
-          16
-          часов в день.</p>
-        <div class="example__wrapper">
-          <dl class="example__list">
-            <div class="example__stats">
-              <dt class="example__result">5 кг</dt>
-              <dd class="example__parameter">снижение веса</dd>
+        <div class="example__info">
+          <div class="example__content">
+            <p class="example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat
+              Energy
+              Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит
+              по
+              16
+              часов в день.</p>
+            <div class="example__wrapper">
+              <dl class="example__list">
+                <div class="example__stats">
+                  <dt class="example__result">5 кг</dt>
+                  <dd class="example__parameter">снижение веса</dd>
+                </div>
+                <div class="example__stats">
+                  <dt class="example__result">60 дней</dt>
+                  <dd class="example__parameter">затрачено времени</dd>
+                </div>
+              </dl>
+              <p class="example__expences">
+                <span class="example__cost">Затраты на питание: 15 000 Руб.</span>
+              </p>
             </div>
-            <div class="example__stats">
-              <dt class="example__result">60 дней</dt>
-              <dd class="example__parameter">затрачено времени</dd>
+          </div>
+          <div class="example__slider slider">
+            <div class="slider__image-container">
+              <img class="slider__image slider__image--fat" width="280" height="256" src="img/fat-cat.png"
+                alt="Толстый кот">
+              <img class="slider__image slider__image--skinny" width="280" height="256" src="img/skinny-cat.png"
+                alt="Худой кот">
             </div>
-          </dl>
-          <p class="example__expences">
-            <span class="example__cost">Затраты на питание: 15 000 Руб.</span>
-          </p>
-        </div>
-        <div class="example__slider slider">
-          <div class="slider__image-container">
-            <img class="slider__image slider__image--fat" width="280" height="256" src="img/fat-cat.png"
-              alt="Толстый кот">
-            <img class="slider__image slider__image--skinny" width="280" height="256" src="img/skinny-cat.png"
-              alt="Худой кот">
-          </div>
-          <div class="slider__tools">
-            <button class="slider__toggle" type="button"></button>
+            <div class="slider__tools">
+              <button class="slider__toggle" type="button"></button>
+            </div>
           </div>
         </div>
-      </div>
     </section>
   </main>
 
@@ -132,9 +132,9 @@
     <div class="page-footer__container container">
       <div class="page-footer__contacts contacts">
         <p class="contacts__invitation">Приглашаем к сотрудничеству дилеров!</p>
-          <address class="contacts__address">
-            ул. Большая Конюшенная, д. 19/8<br>Санкт-Петербург
-          </address>
+        <address class="contacts__address">
+          ул. Большая Конюшенная, д. 19/8<br>Санкт-Петербург
+        </address>
       </div>
       <div class="contacts__map">
         <script type="text/javascript" charset="utf-8" async
@@ -148,17 +148,17 @@
           <ul class="social__list">
             <li class="social__item">
               <a class="social__link" href="#">
-                <span class="visually-hidden">Вконтакте</span>
+                <span>Вконтакте</span>
               </a>
             </li>
             <li class="social__item">
               <a class="social__link" href="#">
-                <span class="visually-hidden">Youtube</span>
+                <span>Youtube</span>
               </a>
             </li>
             <li class="social__item">
               <a class="social__link" href="#">
-                <span class="visually-hidden">Telegam</span>
+                <span>Telegam</span>
               </a>
             </li>
           </ul>

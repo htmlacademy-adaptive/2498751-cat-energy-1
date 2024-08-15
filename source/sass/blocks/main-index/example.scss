@@ -1,36 +1,108 @@
-.example__container {
+.example {
   background-color: var(--color-background-tertiary);
-  padding: 0 20px;
+  padding: 25px 20px 0;
+
+  @media (width >= $tablet-width) {
+    background-color: var(--color-background-primary);
+    padding: 45px 30px 0;
+  }
+
+  @media (width >= $desktop-width) {
+    padding: 0;
+  }
+}
+
+.example__info {
+  @media (width >= $desktop-width) {
+    background-color: var(--color-background-secondary);
+    padding: 70px 110px 75px;
+    display: flex;
+    gap: 224px;
+  }
 }
 
 .example__title {
   @include gap-reset;
-  font: var(--font-oswald-header-xlarge);
-  padding-top: 25px;
+  font: var(--font-primary-header-xlarge);
   margin-bottom: 40px;
   color: var(--color-text-primary);
+
+  @media (width >= $tablet-width) {
+    font: var(--font-primary-header-xxlarge);
+    margin-bottom: 60px;
+    padding: 0;
+  }
+
+  @media (width >= $desktop-width) {
+    background-color: var(--color-background-primary);
+    padding: 0 110px 76px;
+    margin: 0;
+  }
 }
 
 .example__description {
   @include gap-reset;
-  font: var(--font-lato-base);
+  font: var(--font-secondary-base);
   margin-bottom: 20px;
   color: var(--color-text-secondary);
+
+  @media (width >= $tablet-width) {
+    font: var(--font-secondary-xxlarge);
+  }
+
+  @media (width >= $desktop-width) {
+    max-width: 436px;
+    margin-bottom: 69px;
+  }
 }
 
 .example__cost {
-  font: var(--font-oswald-small-high);
+  font: var(--font-primary-small-high);
   text-transform: uppercase;
   margin: 20px 0;
   color: var(--color-text-primary);
 }
 
 .example__result {
-  font: var(--font-oswald-header);
+  font: var(--font-primary-header);
   color: var(--color-text-primary);
 }
 
 .example__parameter {
-  font: var(--font-lato-small-low);
+  font: var(--font-secondary-small-low);
   color: var(--color-text-secondary);
+}
+
+.example__wrapper {
+  @media (width >= $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @media (width >= $desktop-width) {
+    flex-direction: column;
+  }
+}
+
+.example__list {
+  @media (width >= $tablet-width) {
+    display: flex;
+    gap: 43px;
+  }
+  @media (width >= $desktop-width) {
+    margin-bottom: 55px;
+  }
+
+}
+
+
+.example__slider {
+  @media ($tablet-width <= width <= $desktop-width ) {
+    background-color: var(--color-background-tertiary);
+    margin: 0 -30px;
+  }
+
+  @media (width >= $desktop-width) {
+    background-color: var(--color-background-secondary);
+  }
 }
